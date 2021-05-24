@@ -1,0 +1,84 @@
+﻿body {
+	font-size: 11pt;
+	
+	margin: 0px;
+	padding: 0px;
+}
+
+p{
+	color: #00008b;
+}
+
+p.bev{
+	font-size: small;
+}
+
+
+hr {
+	width: 80%; 
+}
+
+h1, h2 {
+	color: #00008b;
+	padding: 5px;
+}
+
+h2 {
+	font-size: 17px;
+}
+
+#tartalom {
+	
+	margin: 0 auto 0 auto;
+	text-align: left;
+	
+}
+
+#oszlop1, #oszlop2, #oszlop3 {
+    float: left;
+    padding: 0px;
+   	margin-left: 5px;
+	margin-right: 5px;
+}
+
+.kep {
+	width: 240px;	
+	margin-left: 30px;
+}
+
+a:link {
+	color: #dc143c;
+}
+
+#lablec {
+    clear: both;
+    
+}
+.grid-container{
+	width: 50%;
+	margin: 0 auto;
+	display: grid;
+	grid-template-areas: 
+	'header header header'
+	'left center right'
+	'footer footer footer';
+	grid-gap: 10px;
+	padding: 10px;
+	grid-template-columns: 310 310 310;
+	background-color: #f0f8ff;
+}
+.bevezetés{
+	grid-area: header;
+}
+.oszlop1{
+	grid-area: left;
+}
+.oszlop2{
+	grid-area: center;
+}
+.oszlop3{
+	grid-area: right;
+}
+.lablec{
+	grid-area: footer;
+}
